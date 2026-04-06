@@ -29,7 +29,6 @@
       background: var(--bg);
       color: var(--text);
       line-height: 1.75;
-      letter-spacing: -0.01em;
       position: relative;
     }
 
@@ -75,8 +74,6 @@
       color: var(--accent-dark);
       margin-bottom: 26px;
     }
-
-    .intro { max-width: 600px; }
 
     section { margin-bottom: 80px; }
 
@@ -124,6 +121,8 @@
       pointer-events: none;
     }
 
+    /* VIDEO STYLES */
+
     .video-wide {
       width: 100%;
       aspect-ratio: 16 / 9;
@@ -133,22 +132,27 @@
       background: #000;
     }
 
+    .video-short-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+
     .video-short {
       width: 220px;
       aspect-ratio: 9 / 16;
       border-radius: 16px;
       overflow: hidden;
-      margin-bottom: 18px;
       background: #000;
     }
 
-    .video-short iframe,
-    .video-wide iframe {
+    iframe {
       width: 100%;
       height: 100%;
       border: 0;
-      display: block;
     }
+
+    /* HEADSHOT */
 
     .profile-wrapper {
       padding: 6px;
@@ -197,10 +201,18 @@
       margin-bottom: 14px;
     }
 
+    .about, .contact {
+      max-width: 700px;
+    }
+
     a {
       color: var(--accent-dark);
       text-decoration: underline;
-      text-underline-offset: 3px;
+    }
+
+    .footer-note {
+      margin-top: 80px;
+      color: var(--muted);
     }
 
     @media (max-width: 640px) {
@@ -226,7 +238,7 @@
         <div class="intro-text">
           <h1>Kayla Cohen</h1>
           <p class="subtitle">Video Editor</p>
-          <p class="intro">
+          <p>
             Editing long-form and short-form content with a focus on clarity, pacing, and story.
           </p>
         </div>
@@ -240,13 +252,10 @@
       <div class="projects">
 
         <div class="project">
-          <div class="video-short">
-            <iframe
-              src="https://www.youtube.com/embed/au_JcT1vfBE?origin=https://yourusername.github.io"
-              title="Fighter Pilot Interview"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+          <div class="video-short-wrapper">
+            <div class="video-short">
+              <iframe src="https://www.youtube.com/embed/au_JcT1vfBE" allowfullscreen></iframe>
+            </div>
           </div>
           <h3>Fighter Pilot Interview</h3>
           <p class="project-type">YouTube Short</p>
@@ -254,13 +263,10 @@
         </div>
 
         <div class="project">
-          <div class="video-short">
-            <iframe
-              src="https://www.youtube.com/embed/6X7EGLOgHrg?origin=https://yourusername.github.io"
-              title="Leadership Podcast Interview"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+          <div class="video-short-wrapper">
+            <div class="video-short">
+              <iframe src="https://www.youtube.com/embed/6X7EGLOgHrg" allowfullscreen></iframe>
+            </div>
           </div>
           <h3>Leadership Podcast Interview</h3>
           <p class="project-type">YouTube Short</p>
@@ -269,12 +275,7 @@
 
         <div class="project">
           <div class="video-wide">
-            <iframe
-              src="https://www.youtube.com/embed/y3bJd2Gpq88?origin=https://yourusername.github.io"
-              title="Leadership Consultant Full Interview"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/y3bJd2Gpq88" allowfullscreen></iframe>
           </div>
           <h3>Leadership Consultant Full Interview</h3>
           <p class="project-type">Podcast</p>
@@ -283,6 +284,23 @@
 
       </div>
     </section>
+
+    <section class="about">
+      <h2>About</h2>
+      <p>
+        I am a video editor specializing in podcasts, educational content, and social media.
+        My work focuses on seamless cuts, strong pacing, and clear storytelling.
+        I have experience editing long-form courses, interviews, documentary-style pieces,
+        and adapting content for a range of social platforms.
+      </p>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p><a href="mailto:klc020201@gmail.com">klc020201@gmail.com</a></p>
+    </section>
+
+    <p class="footer-note">Available for freelance and collaborative projects.</p>
 
   </div>
 </body>
