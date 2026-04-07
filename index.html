@@ -135,6 +135,7 @@
       overflow: hidden;
       margin-bottom: 18px;
       background: #000;
+      position: relative;
       transition: transform 0.3s ease;
     }
 
@@ -346,12 +347,23 @@
 
       <div class="projects">
 
+        <!-- Editing Reel -->
+        <div class="project project-wide">
+          <div class="video-wide thumb"
+            onclick="this.classList.remove('thumb'); this.innerHTML='<iframe src=&quot;https://www.youtube.com/embed/GptXDFuU4iI?autoplay=1&quot; allowfullscreen></iframe>'">
+            <img src="EditingReelThumb.png" alt="Editing Reel thumbnail">
+          </div>
+          <h3>Editing Reel</h3>
+          <p class="project-type">Reel</p>
+          <p>An editing reel showcasing multicam editing, professional production environments, and polished course content.</p>
+        </div>
+
         <!-- Fighter Pilot -->
         <div class="project">
           <div class="video-short-wrapper">
             <div class="video-short thumb"
               onclick="this.classList.remove('thumb'); this.innerHTML='<iframe src=&quot;https://www.youtube.com/embed/au_JcT1vfBE?autoplay=1&quot; allowfullscreen></iframe>'">
-              <img src="FighterPilotThumb.png">
+              <img src="FighterPilotThumb.png" alt="Fighter Pilot Interview thumbnail">
             </div>
           </div>
           <h3>Fighter Pilot Interview</h3>
@@ -364,7 +376,7 @@
           <div class="video-short-wrapper">
             <div class="video-short thumb"
               onclick="this.classList.remove('thumb'); this.innerHTML='<iframe src=&quot;https://www.youtube.com/embed/6X7EGLOgHrg?autoplay=1&quot; allowfullscreen></iframe>'">
-              <img src="LeadershipCoachThumb.png">
+              <img src="LeadershipCoachThumb.png" alt="Leadership Podcast Interview thumbnail">
             </div>
           </div>
           <h3>Leadership Podcast Interview</h3>
@@ -377,7 +389,7 @@
           <div class="video-short-wrapper">
             <div class="video-short thumb"
               onclick="this.classList.remove('thumb'); this.innerHTML='<iframe src=&quot;https://www.youtube.com/embed/EL7DRYvK_H4?autoplay=1&quot; allowfullscreen></iframe>'">
-              <img src="YogaPromoThumb.png">
+              <img src="YogaPromoThumb.png" alt="Wellness Studio Promo thumbnail">
             </div>
           </div>
           <h3>Wellness Studio Promo</h3>
@@ -388,7 +400,7 @@
         <!-- Podcast -->
         <div class="project project-wide">
           <div class="video-wide">
-            <iframe src="https://www.youtube.com/embed/y3bJd2Gpq88"></iframe>
+            <iframe src="https://www.youtube.com/embed/y3bJd2Gpq88" allowfullscreen></iframe>
           </div>
           <h3>Leadership Consultant Full Interview</h3>
           <p class="project-type">Podcast</p>
@@ -412,7 +424,7 @@
       </p>
 
       <div class="band-wrapper">
-        <img src="band2.jpg" class="band-photo">
+        <img src="band2.jpg" class="band-photo" alt="K.C. and the Kids band photo">
       </div>
 
       <div class="music-section">
@@ -420,11 +432,11 @@
 
         <div class="music-videos">
           <div class="video-wide">
-            <iframe src="https://www.youtube.com/embed/ka6Ll-lrOS4"></iframe>
+            <iframe src="https://www.youtube.com/embed/ka6Ll-lrOS4" allowfullscreen></iframe>
           </div>
 
           <div class="video-wide">
-            <iframe src="https://www.youtube.com/embed/y8yY3FJQ9VE"></iframe>
+            <iframe src="https://www.youtube.com/embed/y8yY3FJQ9VE" allowfullscreen></iframe>
           </div>
         </div>
       </div>
