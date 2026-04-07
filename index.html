@@ -161,8 +161,6 @@
       display: block;
     }
 
-    /* THUMBNAILS */
-
     .thumb {
       cursor: pointer;
     }
@@ -220,8 +218,6 @@
       transform: scale(1.02);
       box-shadow: 0 12px 30px rgba(0,0,0,0.15);
     }
-
-    /* HEADSHOT */
 
     .profile-wrapper {
       padding: 6px;
@@ -318,6 +314,23 @@
       color: var(--muted);
     }
 
+    @media (max-width: 640px) {
+      .container {
+        padding: 56px 20px 72px;
+      }
+
+      .intro-block {
+        flex-direction: column;
+      }
+
+      .video-short {
+        width: 180px;
+      }
+
+      .profile {
+        width: 160px;
+      }
+    }
   </style>
 </head>
 
@@ -354,7 +367,7 @@
           <div class="video-short-wrapper">
             <div class="video-short thumb"
               onclick="this.classList.remove('thumb'); this.innerHTML='<iframe src=&quot;https://www.youtube.com/embed/au_JcT1vfBE?autoplay=1&quot; allowfullscreen></iframe>'">
-              <img src="FighterPilotThumb.png">
+              <img src="FighterPilotThumb.png" alt="Fighter Pilot Interview thumbnail">
             </div>
           </div>
           <h3>Fighter Pilot Interview</h3>
@@ -366,7 +379,7 @@
           <div class="video-short-wrapper">
             <div class="video-short thumb"
               onclick="this.classList.remove('thumb'); this.innerHTML='<iframe src=&quot;https://www.youtube.com/embed/6X7EGLOgHrg?autoplay=1&quot; allowfullscreen></iframe>'">
-              <img src="LeadershipCoachThumb.png">
+              <img src="LeadershipCoachThumb.png" alt="Leadership Interview thumbnail">
             </div>
           </div>
           <h3>Leadership Podcast Interview</h3>
@@ -374,9 +387,20 @@
           <p>Social media content clipped from a full interview with a leadership expert.</p>
         </div>
 
+        <div class="project">
+          <div class="video-short-wrapper">
+            <div class="video-short">
+              <iframe src="https://www.youtube.com/embed/EL7DRYvK_H4" allowfullscreen></iframe>
+            </div>
+          </div>
+          <h3>Wellness Studio Promo</h3>
+          <p class="project-type">Spec Sample</p>
+          <p>Sample vertical promo created to showcase editing for wellness, fitness, and lifestyle brands.</p>
+        </div>
+
         <div class="project project-wide">
           <div class="video-wide">
-            <iframe src="https://www.youtube.com/embed/y3bJd2Gpq88"></iframe>
+            <iframe src="https://www.youtube.com/embed/y3bJd2Gpq88" allowfullscreen></iframe>
           </div>
           <h3>Leadership Consultant Full Interview</h3>
           <p class="project-type">Podcast</p>
@@ -400,7 +424,7 @@
       </p>
 
       <div class="band-wrapper">
-        <img src="band2.jpg" class="band-photo">
+        <img src="band2.jpg" alt="Band photo" class="band-photo">
       </div>
 
       <div class="music-section">
@@ -408,11 +432,11 @@
 
         <div class="music-videos">
           <div class="video-wide">
-            <iframe src="https://www.youtube.com/embed/ka6Ll-lrOS4"></iframe>
+            <iframe src="https://www.youtube.com/embed/ka6Ll-lrOS4" allowfullscreen></iframe>
           </div>
 
           <div class="video-wide">
-            <iframe src="https://www.youtube.com/embed/y8yY3FJQ9VE"></iframe>
+            <iframe src="https://www.youtube.com/embed/y8yY3FJQ9VE" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -421,6 +445,7 @@
 
     <section class="contact">
       <h2>Contact</h2>
+      <p>Located in Atlanta, Georgia.</p>
       <p><a href="mailto:klc020201@gmail.com">klc020201@gmail.com</a></p>
     </section>
 
